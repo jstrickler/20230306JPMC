@@ -65,15 +65,59 @@ if city_to_find in cities:
 
 # cities.remove('Milwaukee')
 
+print(f"cities: {cities}")
 
-food = ['eggs', 'spam', 'spam', 'spam', 'eggs', 'spam', 'eggs', 'spam']
 
-start_pos = -1
-while True:
-    start_pos = food.index('eggs', start_pos + 1)
-    print("found at", start_pos)
-    if start_pos >= len(food):
-        break
+print(f"cities[2]: {cities[2]}")
+print(f"cities[9]: {cities[9]}")
+print(f"cities[len(cities)-1]: {cities[len(cities)-1]}")
+print(f"cities[-1]: {cities[-1]}")
+print(f"cities[-2]: {cities[-2]}")
+
+#  STR[0]  BYTES[0] LIST[0]  TUPLE[0]
+# print(f"cities[22]: {cities[22]}")
+print(f"cities: {cities}")
+
+print(f"cities[0:3]: {cities[0:3]}")
+
+#  start:stop  :stop start:  :    start:stop:step
+
+print(f"cities[3:7]: {cities[3:7]}")
+print(f"cities[:4]: {cities[:4]}")
+print(f"cities[4:]: {cities[4:]}")
+print(f"cities[-3:]: {cities[-3:]}")
+
+client = "J P Morgan Chase"
+print(f"client[:10]: {client[:10]}")
+print(f"client[-5:]: {client[-5:]}")
+print('-' * 60)
+
+for city in cities:
+    print(city)
 print()
+
+for i, city in enumerate(cities):
+    if (i != 0) and ((i % 3) == 0):
+        print("====")
+    print(i, city)
+print()
+print(f"list(enumerate(cities)): {list(enumerate(cities))}")
+
+
+s = "garbanzo"
+for char in s:
+    print(char)
+print()
+
+# for VAR ... in ITERABLE:
+#     ...
+
+
+
+
+
+
+
+
 
 
