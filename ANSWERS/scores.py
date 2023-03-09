@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+from gradeutil import get_letter_grade
+
 FILE_PATH = "../DATA/testscores.dat"
 
 def main():
@@ -19,17 +21,5 @@ def read_data():
 
     return scores_by_student
 
-def get_letter_grade(score):
-    if score > 94:
-        grade = 'A'
-    elif score > 88:
-        grade = 'B'
-    elif score > 82:
-        grade = 'C'
-    elif score > 74:
-        grade = 'D'
-    else:
-        grade = 'F'
-    return grade
 
 main()
