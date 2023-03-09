@@ -35,11 +35,35 @@ print(f"capitals.get('ME', 'not found'): {capitals.get('ME', 'not found')}")
 cap = capitals.setdefault('ME', 'August')
 print(f"cap: {cap}")
 print(f"capitals: {capitals}")
+print()
 
+for cap, capital in capitals.items():
+    print(cap, capital)
+print()
 
+print('-' * 60)
 
+airports = {
+    'EWR': 'Newark',
+    'YYZ': 'Toronto',
+    'MCI': 'Kansas City',
+    'SFO': 'San Francisco',
+    'LTN': 'London',  # (Luton)
+    'LGW': 'London',  # (Gatwick)
+    'LHR': 'London',  # (Heathrow)
+    'RDU': 'Raleigh-Durham',
+    'SJC': 'San Jose',
+    'MCO': 'Orlando',
+    'YCC': 'Calgary',
+    'ABQ': 'Albuquerque',
+    'OAK': 'Oakland',
+    'SMF': 'Sacramento',
+    'YOW': 'Ottawa',
+    'IAD': 'Dulles',
+}
 
-
-
+for code, city in sorted(airports.items()):
+    print(code, city)
+print()
 
 
